@@ -6,15 +6,16 @@ an image preview, and the first image-processing stage: loading and normalizatio
 ## Start on Windows
 
 Install [Git for Windows](https://git-scm.com/install/windows) and
-[Python 3.11 or newer](https://www.python.org/downloads/windows/), including
-**Tcl/Tk and IDLE** and the Python launcher.
+[Python 3.12](https://www.python.org/downloads/windows/), including
+**Tcl/Tk and IDLE** and the Python launcher. These commands use Python 3.12,
+matching the version used for the image-loading tests.
 
 Open PowerShell in the folder where you want to keep the project and run:
 
 ```powershell
 git clone https://github.com/chewy441014/RotoDrawPy.git
 cd RotoDrawPy
-py -3 -m venv .venv
+py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe rotodraw.py
 ```
